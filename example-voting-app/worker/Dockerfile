@@ -3,7 +3,8 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0 as build
 
 WORKDIR /App
 
-COPY . ./
+#COPY . ./
+COPY . /app
 
 #RUN dotnet restore / publish -c release -o out
 
